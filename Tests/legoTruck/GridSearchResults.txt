@@ -1,0 +1,2 @@
+LF,#,gamma0,mse, badpix, maePlanes
+LF,#,gamma0,mse, badpix, maePlanes

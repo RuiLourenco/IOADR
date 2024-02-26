@@ -1,0 +1,41 @@
+{
+  "lightFields": {
+    /*Path to the lightfields available at https://lightfield-analysis.uni-konstanz.de/ */
+    "paths": [
+      "C:\\Users\\user\\Documents\\work\\Images\\legoTruck"
+    ],
+    "dataset": "Stanford"
+  },
+  "Settings": {
+    "occlusionAware": true,
+    "useCDC": true,
+    "useSP": true,
+    "useCDCHeuristic": true,
+    "useSPHeuristic": true,
+    "useSDHeuristic": true
+  },
+  "Parameters": {
+    "t0": 10,
+    "alpha": 0.8,
+    "sigma": 0.04,
+    "lambda0": 100,
+    "gamma0": 0.05,
+    "tau_k": 0.9,
+    "tau_d": 0.031,
+    "innerScale": 1.4,
+    "outerScale": 1.4,
+    "rhoColor": 0.15,
+    "rhoDisp": 20,
+    "rhoCost": 1,
+    "tauColor": 3,
+    "tauDisp": 1,
+    "epsDisp": 0.5,
+    "deltaCDC": 4,
+    "nIter": 2,
+    "nTemps": 5,
+    "qCdc": 2 ,
+    "qSG": 6, 
+    "deltaA": 5,
+    "deltaAvg": 18
+  }
+}
