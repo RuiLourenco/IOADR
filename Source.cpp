@@ -86,6 +86,5 @@ int main(int argc, char** argv){
     else {
         test.run();
     }
-	test.gridSearch("C:/Users/user/source/repos/Iterative Occlusion Aware Depth Refinement/gridSearch.json");
 	return 1;
 }
