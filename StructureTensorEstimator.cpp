@@ -32,14 +32,9 @@ const DisparityMap StructureTensorEstimator::estimateDisparity() {
 	estimateDisparity(tempHorizontal, tempHorizontalTrust, true);
 	estimateDisparity(tempVertical, tempVerticalTrust, false);
 
-	std::array<double, 2> range = { -2.0,2.0 };
-	tempHorizontal.show(range);
-	tempVertical.show(range);
-	//std::cout<< "th_mse = " << tempHorizontal.mse(15)<<std::endl;
-	//std::cout<< "tv_mse = " << tempVertical.mse(15)<<std::endl;
+
 	DisparityMap disparity(lightField, "final disparity");
 	Map1d trust(lightField->viewHeight(), lightField->viewWidth(), "final disparity trust");
-	tempHorizontal.show();
 	mergeDisparities(tempHorizontal, tempVertical,tempHorizontalTrust,tempVerticalTrust,disparity, trust);
 	return disparity;
 }
@@ -117,12 +112,6 @@ const void StructureTensorEstimator::estimateDisparity(DisparityMap& dispOut,Map
 
 
 		image::Image epi = this->lightField->getEpi(fixedView, i, isHorizontal);
-		if (i == 33) {
-			std::cout << "EPI(4,100) " << epi(4, 100) << " EPI(4,300) " << epi(4, 300) << std::endl;
-			std::cout << "EPI(0,width-1) " << epi(0, epi.cols() - 1) << " EPI(0,0) " << epi(0, 0) << std::endl;
-			std::cout << "EPI(8,width-1) " << epi(8, epi.cols() - 1) << " EPI(8,0) " << epi(8, 0) << std::endl;
-		}
-
 		Mat disparity = cv::Mat(epiHeight - 2, epiWidth, CV_64F);
 		Mat trust = cv::Mat(epiHeight - 2, epiWidth, CV_64F);
 		
