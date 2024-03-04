@@ -14,12 +14,12 @@ To build the project in Microsoft Visual Studio, set up the solution with the co
 Run the created executable from a command line.
 Example:   
 
-    /"Iterative Occlusion Aware Depth Refinement.exe"/ -c ../exampleConfigs/config.json -n hci_tests"
+    /"Iterative Occlusion Aware Depth Refinement.exe" -c ../exampleConfigs/config.json -n hci_tests"
 
 All Options:
 
--c <config_file>          Specify configuration file
--gs <grid_search_config>  Enable grid search and specify grid search configuration file
--n <test_name>  Provides the name for the test folder
--h                        Displays a help message
+- -c <config_file>          Specify configuration file  
+- -gs <grid_search_config>  Enable grid search and specify grid search configuration file  
+- -n <test_name>  Provides the name for the test folder  
+- -h                        Displays a help message  
 

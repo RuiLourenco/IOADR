@@ -20,7 +20,7 @@ struct CommandLineArgs {
     string configFile;
     bool doGridSearch;
     string gridSearchConfigFile;
-    string testName = "legoTruck";
+    string testName = "legoTruck-OcclusionUnaware";
 };
 
 

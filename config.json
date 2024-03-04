@@ -7,7 +7,7 @@
     "dataset": "Stanford"
   },
   "Settings": {
-    "occlusionAware": true,
+    "occlusionAware": false,
     "useCDC": true,
     "useSP": true,
     "useCDCHeuristic": true,
