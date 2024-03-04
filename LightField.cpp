@@ -187,8 +187,6 @@ void lf::LightField::loadLightField(std::string path)
 	const char* view_prefix = "input_Cam";
 	const int viewSize = 9;
 
-	//Get Name from Path
-	this->name = getNameFromPath(path);
 
 	//Load LF Camera Parameters
 	std::ifstream parametersFile;
@@ -222,6 +220,7 @@ void lf::LightField::loadLightFieldStanford(std::string path)
 	//this->size[0] = {9, 9, 512, 512, 3};
 	const char* view_prefix = "out_";
 	const int viewSize = 9;
+
 
 	//camera parameters are set at 1 as they only have weight influence on the result;
 	this->parameters.f = 1;
@@ -273,6 +272,8 @@ LightField::LightField(std::string path, std::string dataset) {
 	
 
 	parseDatasetString(dataset);
+	this->name = getNameFromPath(path);
+
 	if (this->isStanford) {
 		loadLightFieldStanford(path);
 	}
