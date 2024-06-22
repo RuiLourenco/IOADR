@@ -3,6 +3,17 @@
 The IOADR algorithm is an accurate local optimization algorithm for disparity estimation from light field images.
 A geometric model of light field images is enforced through a novel energy minimization framework that uses several heuristics to obtain likely candidate disparities.
 
+## Results
+
+The test results, including more images than those available in the published article are available in the Tests folder.
+
+### Occlusion Awareness
+The difference to ground truth images (a whiter value implies a larger error) show the clear improvements from the Occlusion Aware Algorithm:
+**Unaware**
+[Unaware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionUnaware/cotton_Diff.png)
+**Aware**
+[Aware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/cotton_Diff.png)
+
 ## Requirements
 - OpenCV3 
 - Eigen 3.4 
@@ -23,4 +34,3 @@ Example:
 - -gs <grid_search_config>  Enable grid search and specify grid search configuration file  
 - -n <test_name>  Provides the name for the test folder  
 - -h                        Displays a help message  
-
