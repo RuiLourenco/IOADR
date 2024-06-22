@@ -17,7 +17,10 @@ The difference to ground truth images (a whiter value implies a larger error) sh
 ![Aware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/cotton_Diff.png)
 
 ### Surface Normal Regularization
-The difference surface normal maps reveal the effect of the smooth plane cost used:
+The difference surface normal maps reveal the effect of the smooth plane cost and smooth plane heuristic used:
+
+**No Smooth Plane Heuristic**  
+![WithoutSmoothPlaneCost](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_NoSmoothPlaneHeuristic/cotton_Normals.png)
 
 **No Smooth Geometry Cost**  
 ![WithoutSmoothPlaneCost](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_NoSmoothGeometryCost/cotton_Normals.png)
