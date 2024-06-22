@@ -8,10 +8,12 @@ A geometric model of light field images is enforced through a novel energy minim
 The test results, including more images than those available in the published article are available in the Tests folder.
 
 ### Occlusion Awareness
-The difference to ground truth images (a whiter value implies a larger error) show the clear improvements from the Occlusion Aware Algorithm:
-**Unaware**
+The difference to ground truth images (a whiter value implies a larger error) show the clear improvements from the Occlusion Aware Algorithm:  
+
+**Unaware**   
 ![Unaware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionUnaware/cotton_Diff.png)
-**Aware**
+
+**Aware**  
 ![Aware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/cotton_Diff.png)
 
 ## Requirements
