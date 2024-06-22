@@ -11,10 +11,11 @@ A geometric model of light field images is enforced through a novel energy minim
 To build the project in Microsoft Visual Studio, set up the solution with the correct links to OpenCV3 and Eigen 3.4 in your Windows installation. Release mode compilation is recommended for faster run-time.
 
 ## Running the program
-Run the created executable from a command line.
-Example:   
+Run the created executable from a Power Shell.
+Example:
+     start ".\Iterative Occlusion Aware Depth Refinement.exe" -ArgumentList '-c ../../config.json -n example'
 
-    /"Iterative Occlusion Aware Depth Refinement.exe" -c ../exampleConfigs/config.json -n hci_tests"
+
 
 ### All Options:
 
