@@ -10,9 +10,9 @@ The test results, including more images than those available in the published ar
 ### Occlusion Awareness
 The difference to ground truth images (a whiter value implies a larger error) show the clear improvements from the Occlusion Aware Algorithm:
 **Unaware**
-[Unaware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionUnaware/cotton_Diff.png)
+![Unaware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionUnaware/cotton_Diff.png)
 **Aware**
-[Aware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/cotton_Diff.png)
+![Aware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/cotton_Diff.png)
 
 ## Requirements
 - OpenCV3 
