@@ -81,7 +81,7 @@ const void StructureTensorEstimator::mergeDisparities(DisparityMap& horizontalDi
 		std::cout << "Error Estimating Initial Disparity: " << e.what() << std::endl;
 		exit(-1);
 	}
-	finalDisp.show();
+	//finalDisp.show();
 
 	std::cout << "afterRAMSE = " << finalDisp.mse(15) << std::endl;
 

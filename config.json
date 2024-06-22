@@ -2,12 +2,15 @@
   "lightFields": {
     /*Path to the lightfields available at https://lightfield-analysis.uni-konstanz.de/ */
     "paths": [
-      "C:\\Users\\user\\Documents\\work\\Images\\legoTruck"
+      "C:\\Users\\user\\Documents\\work\\Images\\benchmark\\training\\boxes",
+      "C:\\Users\\user\\Documents\\work\\Images\\benchmark\\training\\cotton",
+      "C:\\Users\\user\\Documents\\work\\Images\\benchmark\\training\\dino",
+      "C:\\Users\\user\\Documents\\work\\Images\\benchmark\\training\\sideboard"
     ],
-    "dataset": "Stanford"
+    "dataset": "HCI"
   },
   "Settings": {
-    "occlusionAware": false,
+    "occlusionAware": true,
     "useCDC": true,
     "useSP": true,
     "useCDCHeuristic": true,

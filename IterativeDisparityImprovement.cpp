@@ -651,7 +651,7 @@ void IterativeDisparityImprovement::improveDisparity() {
 			}
 			
 			std::cout << "q = " << q << " mse:" << disparityMap.mse(15) << " badpix = " << disparityMap.badPix(0.07) << " maePlanes:" << disparityMap.maePlanes() << std::endl;
-			disparityMap.show();
+			//disparityMap.show();
 		}
 		t = parameters.t0 * pow(parameters.alpha, tIter + 1);
 	}
