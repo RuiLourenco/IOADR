@@ -20,7 +20,7 @@ The difference to ground truth images (a whiter value implies a larger error) sh
 The difference surface normal maps reveal the effect of the smooth plane cost and smooth plane heuristic used:
 
 **No Smooth Plane Heuristic**  
-![WithoutSmoothPlaneCost](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_NoSmoothPlaneHeuristic/cotton_Normals.png)
+![WithoutSmoothPlaneHeuristic](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training-NoSmoothPlaneHeuristic/cotton_Normals.png)
 
 **No Smooth Geometry Cost**  
 ![WithoutSmoothPlaneCost](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_NoSmoothGeometryCost/cotton_Normals.png)
