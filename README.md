@@ -21,6 +21,7 @@ The difference surface normal maps reveal the effect of the smooth plane cost us
 
 **No Smooth Geometry Cost**  
 ![WithoutSmoothPlaneCost](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_NoSmoothGeometryCost/cotton_Normals.png)
+
 **With Smooth Geometry Cost**  
 ![WithSmoothPlaneCost](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/cotton_Normals.png)
 
