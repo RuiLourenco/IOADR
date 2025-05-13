@@ -12,7 +12,7 @@ The raw test results, including all generated disparity maps and surface normal 
 ### Real Light Fields
 
 **LegoTruck**  
-![Disparity Map](https://github.com/RuiLourenco/IOADR/blob/master/Tests/legoTruck_OcclusionAware/legoTruck.png =250x)
+<img src="https://github.com/RuiLourenco/IOADR/blob/master/Tests/legoTruck_OcclusionAware/legoTruck.png" alt="legoTruck" width="200"/>
 
 ### Occlusion Awareness
 The difference to ground truth images (a whiter value implies a larger error) show the clear improvements from the Occlusion Aware Algorithm:  
