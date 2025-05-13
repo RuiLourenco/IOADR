@@ -71,7 +71,8 @@ To build the project in Microsoft Visual Studio, set up the solution with the co
 
 ## Running the program
 Run the created executable from a Power Shell.
-Example:
+Example:  
+
      start ".\Iterative Occlusion Aware Depth Refinement.exe" -ArgumentList '-c ../../config.json -n example'
 
 
