@@ -46,10 +46,10 @@ The difference surface normal maps reveal the effect of the smooth plane cost an
 #### HCI Stratified
 | Light Field | MSE x100| Badpix 0.07|
 |----------|----------|----------|
-|  Backgammon  | 3.79512  |3.05%   |
-|  Dots  | 6.26033   |  |19.52% |
-|  Pyramids  | 0.0410231  | 4.56%   |
-|  Stripes  | 0.650726 | 3.02%   |
+|  Backgammon  | 3.795 |3.05%   |
+|  Dots  | 6.260 |19.52% |
+|  Pyramids  | 0.041  | 4.56%   |
+|  Stripes  | 0.651| 3.02%   |
 
 #### Original HCI Dataset 
 | Light Field | MSE x100 | Badpix 0.07 |
