@@ -703,14 +703,12 @@ Eigen::Vector4d IterativeDisparityImprovement::calcEdgeAwarePlaneApproximation()
 
 
 	
-	nm::NormalMap avgWindow(parameters.deltaAvg * 2 + 1, parameters.deltaAvg * 2 + 1);
 	for (int nCurr = n0; nCurr <= nMax; nCurr++) {
 		for (int mCurr = m0; mCurr <= mMax; mCurr++) {
 			if (nCurr == n && mCurr == m) continue;
 
 			
 			nm::Normal normal = this->normalMap.getNormal(nCurr, mCurr);
-			avgWindow.setNormal(normal,nCurr - n0, mCurr - m0);
 			double disparity = this->disparityMap(nCurr, mCurr);
 			double angle = mu::angleBetweenVectors(normal, currNormal);
 			neighborNormals.push_back(normal);
@@ -721,8 +719,8 @@ Eigen::Vector4d IterativeDisparityImprovement::calcEdgeAwarePlaneApproximation()
 	//std::cout << "There are a total of " << coords.size() << " normals in the average window!" << std::endl;
 	//if (inTestPixel())normalMap.show();
 	//if(inTestPixel())avgWindow.show();
-	image::Image hasInlierNormal(parameters.deltaAvg*2+1, parameters.deltaAvg * 2 + 1,"Inlier Normals");
-	image::Image hasInlierPlane(parameters.deltaAvg * 2 + 1, parameters.deltaAvg * 2 + 1,"Inlier Plane");
+	//image::Image hasInlierNormal(parameters.deltaAvg*2+1, parameters.deltaAvg * 2 + 1,"Inlier Normals");
+	//image::Image hasInlierPlane(parameters.deltaAvg * 2 + 1, parameters.deltaAvg * 2 + 1,"Inlier Plane");
 	double acc = 0;
 	Eigen::Vector3d averageNormal = Eigen::Vector3d::Zero();
 	double average = std::reduce(angleBeta.begin(), angleBeta.end()) / angleBeta.size();
@@ -737,7 +735,7 @@ Eigen::Vector4d IterativeDisparityImprovement::calcEdgeAwarePlaneApproximation()
 			normalsInS.push_back(neighborNormals[i]);
 			averageNormal += neighborNormals[i].getNormal();
 			coordsInS.push_back(coords[i]);
-			if(inTestPixel())hasInlierNormal(coords[i][0]-n0, coords[i][1]-m0) = 255;
+			//if(inTestPixel())hasInlierNormal(coords[i][0]-n0, coords[i][1]-m0) = 255;
 			
 		}
 	}
@@ -771,7 +769,7 @@ Eigen::Vector4d IterativeDisparityImprovement::calcEdgeAwarePlaneApproximation()
 			//if (inTestPixel())std::cout << "(" << coordsInS[i][0] << "," << coordsInS[i][1] << ") = " << disparity << " " << a << std::endl;
 		    //if (inTestPixel())std::cout << "(" << coordsInS[i][0] << "," << coordsInS[i][1] << ") = " << abs(dEstimate - currDisparity) << " " << dEstimate <<" "<<currDisparity<< " | " << finalNormal.transpose() << std::endl;
 			coordsInR.push_back(coordsInS[i]);
-			if(inTestPixel())hasInlierPlane(coordsInS[i][0] - n0, coordsInS[i][1] - m0) = 255;
+			//if(inTestPixel())hasInlierPlane(coordsInS[i][0] - n0, coordsInS[i][1] - m0) = 255;
 			//finalNormal += currNormal.getNormal();
 			finalA += a;
 			inlierNeighborCount++;

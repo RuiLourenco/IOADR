@@ -2,10 +2,13 @@
   "lightFields": {
     /*Path to the lightfields available at https://lightfield-analysis.uni-konstanz.de/ */
     "paths": [
-      "C:\\Users\\user\\Documents\\work\\Images\\benchmark\\training\\boxes",
-      "C:\\Users\\user\\Documents\\work\\Images\\benchmark\\training\\cotton",
-      "C:\\Users\\user\\Documents\\work\\Images\\benchmark\\training\\dino",
-      "C:\\Users\\user\\Documents\\work\\Images\\benchmark\\training\\sideboard"
+      "C:\\Users\\user\\Documents\\work\\Images\\hci_old\\blender\\buddha",
+      "C:\\Users\\user\\Documents\\work\\Images\\hci_old\\blender\\buddha2",
+      "C:\\Users\\user\\Documents\\work\\Images\\hci_old\\blender\\horses",
+      "C:\\Users\\user\\Documents\\work\\Images\\hci_old\\blender\\medieval",
+      "C:\\Users\\user\\Documents\\work\\Images\\hci_old\\blender\\monasRoom",
+      "C:\\Users\\user\\Documents\\work\\Images\\hci_old\\blender\\papillon",
+      "C:\\Users\\user\\Documents\\work\\Images\\hci_old\\blender\\stillLife"
     ],
     "dataset": "HCI"
   },

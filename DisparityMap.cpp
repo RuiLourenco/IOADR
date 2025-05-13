@@ -210,6 +210,9 @@ double DisparityMap::maePlanes() {
 	DisparityMap groundTruth = this->lightField->getGroundTruth();
 	nm::NormalMap gtNormalMap = groundTruth.estimateNormals();
 	cv::Mat mask = lightField->planeMask;
+	if (mask.empty()) {
+		return -1;
+	}
 	nm::NormalMap normal = this->estimateNormals();
 	double maePlanes = normal.medianAngleError(gtNormalMap, mask);
 	return maePlanes;

@@ -207,8 +207,18 @@ void lf::LightField::loadLightField(std::string path)
 	this->size[2] = this->data[0][0].rows();
 	this->size[3] = this->data[0][0].cols();
 	this->size[4] = this->data[0][0].data.channels();
-	this->planeMask = cv::imread(path + "\\" + "mask_planes_lowres" + ".png", cv::IMREAD_ANYCOLOR);
-	this->smoothMask = cv::imread(path + "\\" + "mask_smooth_surfaces_lowres" + ".png", cv::IMREAD_ANYCOLOR);
+	try {
+		this->planeMask = cv::imread(path + "\\" + "mask_planes_lowres" + ".png", cv::IMREAD_ANYCOLOR);
+		this->smoothMask = cv::imread(path + "\\" + "mask_smooth_surfaces_lowres" + ".png", cv::IMREAD_ANYCOLOR);
+
+		if (this->planeMask.empty()|| this->smoothMask.empty()) {
+			std::cout << "Procceeding without Ground Truth Plane Maps, Median Angle Error Results will be Invalid." << std::endl;
+		}
+	}
+	catch (const cv::Exception& ex) {
+		std::cout << "Procceeding without Ground Truth Plane Maps, Median Angle Error Results will be Invalid." << std::endl;
+		this->planeMask = cv::Mat(this->size[2], this->size[3], CV_8UC3, cv::Scalar(0,0,0));
+	}
 	cv::Mat gt = cv::imread(path + "\\" + "gt_disp_lowres.pfm", cv::IMREAD_UNCHANGED);
 	gt.convertTo(gt, CV_64F);
 	this->groundTruth = DisparityMap(this, gt.clone(), "Ground Truth");
