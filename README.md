@@ -12,8 +12,6 @@ The raw test results, including all generated disparity maps and surface normal 
 ### Real Light Fields
 
 **LegoTruck**
-**LegoTruck**
-![Disparity Map](https://github.com/RuiLourenco/IOADR/blob/master/Tests/legoTruck_OcclusionAware/legoTruck.png)
 ![Disparity Map](https://github.com/RuiLourenco/IOADR/blob/master/Tests/legoTruck_OcclusionAware/legoTruck.png)
 
 
