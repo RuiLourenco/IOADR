@@ -12,7 +12,7 @@ The raw test results, including all generated disparity maps and surface normal 
 ### Real Light Fields
 
 **LegoTruck**  
-![Disparity Map](https://github.com/RuiLourenco/IOADR/blob/master/Tests/legoTruck_OcclusionAware/legoTruck.png)
+![Disparity Map](https://github.com/RuiLourenco/IOADR/blob/master/Tests/legoTruck_OcclusionAware/legoTruck.png =250x)
 
 ### Occlusion Awareness
 The difference to ground truth images (a whiter value implies a larger error) show the clear improvements from the Occlusion Aware Algorithm:  
@@ -54,13 +54,13 @@ The difference surface normal maps reveal the effect of the smooth plane cost an
 #### Original HCI Dataset 
 | Light Field | MSE x100 | Badpix 0.07 |
 |-------------|----------|-------------|
-| buddha      | 0.350552 | 0.0213663   |
-| buddha2     | 0.855003 | 0.116454    |
-| horses      | 1.53808  | 0.120076    |
-| medieval    | 0.517461 | 0.0601858   |
-| monasRoom   | 0.366887 | 0.0723555   |
-| papillon    | 0.49296  | 0.131624    |
-| stillLife   | 1.01254  | 0.0716229   |
+| buddha      | 0.351 | 2.14%   |
+| buddha2     | 0.855 | 11.65%    |
+| horses      | 1.538  | 12.01%    |
+| medieval    | 0.517 |6.02%  |
+| monasRoom   | 0.367 | 7.24%   |
+| papillon    | 0.493  | 13.17%    |
+| stillLife   | 1.013  | 7.17%   |
 
 ## Requirements
 - OpenCV3 
