@@ -12,34 +12,34 @@ The raw test results, including all generated disparity maps and surface normal 
 ### Real Light Fields
 
 **LegoTruck**  
-<img src="https://github.com/RuiLourenco/IOADR/blob/master/Tests/legoTruck_OcclusionAware/legoTruck.png" alt="legoTruck" width="200"/>
+<img src="https://github.com/RuiLourenco/IOADR/blob/master/Tests/legoTruck_OcclusionAware/legoTruck.png" alt="legoTruck" width="300"/>
 
 ### Occlusion Awareness
 The difference to ground truth images (a whiter value implies a larger error) show the clear improvements from the Occlusion Aware Algorithm:  
 
-**Unaware**   
-![Unaware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionUnaware/cotton_Diff.png)
+**Unaware**  
+<img src="https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionUnaware/cotton_Diff.png" width="300">
 
 **Aware**  
-![Aware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/cotton_Diff.png)
+<img src="https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/cotton_Diff.png" width="300">
 
-**Unaware**   
-![Unaware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionUnaware/dino_Diff.png)
+**Unaware**  
+<img src="https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionUnaware/dino_Diff.png" width="300">
 
 **Aware**  
-![Aware](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/dino_Diff.png)
+<img src="https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/dino_Diff.png" width="300">
 
 ### Surface Normal Regularization
 The difference surface normal maps reveal the effect of the smooth plane cost and smooth plane heuristic used:
 
 **No Smooth Plane Heuristic**  
-![WithoutSmoothPlaneHeuristic](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training-NoSmoothPlaneHeuristic/cotton_Normals.png)
+<img src="https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training-NoSmoothPlaneHeuristic/cotton_Normals.png" width="300">
 
 **No Smooth Geometry Cost**  
-![WithoutSmoothPlaneCost](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_NoSmoothGeometryCost/cotton_Normals.png)
+<img src="https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_NoSmoothGeometryCost/cotton_Normals.png" width="300">
 
 **With Smooth Geometry Cost**  
-![WithSmoothPlaneCost](https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/cotton_Normals.png)
+<img src="https://github.com/RuiLourenco/IOADR/blob/master/Tests/HCI-Training_OcclusionAware/cotton_Normals.png" width="300">
 
 ### Objective Results for Additional Images
 
